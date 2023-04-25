@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Form, nav, multimedia, ">
+    <meta name="author" content="Franco Yaya">
+    <meta name="description" content="Un formulario totalmente inutil que puede o no ser controversial">
+    <title>Pagina con CSS de Franco Yaya</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <img class=logo src="Medios/Logo 2.png" alt="Logo1">
+    </header>
+    <br>
+    <nav class="Navegacion">
+        <a href="index.html"><button>INICIO</button></a> |
+        <a href="about.html"><button>ACERCA DE</button></a> |
+        <a href="multimedia.html"><button>MULTIMEDIA</button></a> |
+        <a href="form.html"><button>SUGERENCIAS</button></a> |
+        <a href=""><button onclick="alert('BOO!')">BOTON MISTERIOSO</button></a>
+    </nav>
+    <h1 class="Titulo1">Sugerencias</h1>
+
+    <p>* Campos obligatorios</p>
+    <form action="Enviar.php" method="post">
+        <strong><label for="Nombre">NOMBRE(S)</label><small>*</small></strong>
+        <br>
+        <input type="text" id="Nombre" size="tamaño" name="Nombre" placeholder="Escribir aca" maxlength="36" minlength="1" required>
+        <br><br>
+        <strong><label for="Apellido">APELLIDO(S)</label><small>*</small></strong>
+        <br>
+        <input type="text" id="Apellido" size="tamaño" name="Apellido" placeholder="Escribir aca" maxlength="36" minlength="1" required>
+        <br><br>
+        <strong><label for="fecha">FECHA EN LA QUE TE UNISTE AL SERVER DE LA VIDA</label><small>*</small></strong>
+        <br>
+        <input type="date" name="fecha" id="fecha" min="1950-01-01" max="" required>
+        <br><br>
+        <strong><label for="Edad">AÑOS QUERIENDO DESCONECTARTE DEL SERVER</label></strong>
+        <br>
+        <input type="number" id="Edad" size="tamaño" name="Edad" placeholder="Yo voy 6" min="0">
+        <br><br>
+        <strong><label for="Lenguaje">¿CUÁL ES TU LENGUAJE FAVORITO?</label required><small>*</small></strong>
+        <br>
+        <input type="radio" name="Lenguaje favorito" value="JavaScript">JavaScript
+        <input type="radio" name="Lenguaje favorito" value="Python">Python
+        <input type="radio" name="Lenguaje favorito" value="Pascal">Pascal
+        <input type="radio" name="Lenguaje favorito" value="C">C/C++
+        <input type="radio" name="Lenguaje favorito" value="Ruby">Ruby
+        <input type="radio" name="Lenguaje favorito" value="SmallTalk">SmallTalk
+        <input type="radio" name="Lenguaje favorito" value="Otro">Otro
+        <br><br>
+        <strong><label for="Derechos">¿CÓMO TE IDENTIFICÁS MÁS?</label required><small>*</small></strong>
+        <br>
+        <input type="radio" name="Cuantos derechos tenes" value="Todos">Persona normal
+        <input type="radio" name="Cuantos derechos tenes" value="No muchos">MOMENTO BOVER
+        <input type="radio" name="Cuantos derechos tenes" value="Pocos">Otaku
+        <input type="radio" name="Cuantos derechos tenes" value="Menos">Ser de alto contraste
+        <input type="radio" name="Cuantos derechos tenes" value="Ninguno">Programo en C
+        <p style="font-family:calibri">Esto solo sirve para juzgarte</p>
+        <strong><label for="Comentarios">¿QUERÉS DEJAR UN COMENTARIO QUE TAL VEZ LEAMOS?</label></strong>
+        <br>
+        <textarea name="Comentarios" id="Comentarios" cols="45" rows="5" name="Comentarios"
+            placeholder="Opiniones bienvenidas"></textarea>
+        <br><br>
+        <strong><label style="font-family:calibri" for="Pais">SELECCIONÁ TU PAIS EN LA LISTA (SI ESTÁ)</label
+                required><small>*</small></strong>
+        <br>
+        <select name="Pais" id="Pais" placeholder="Selecciona">
+            <optgroup label="Pais que definitivamente existe">
+                <option value="Argentina">Argentina mejor pais de la galaxia</option>
+            </optgroup>
+            <optgroup label="Paises con menor importancia">
+                <option value="Andorra">Andorra creo que existe</option>
+                <option value="Mexico">Tacolandia</option>
+                <option value="Peruvian">Perusalen</option>
+                <option value="USA">Yankeeland</option>
+            </optgroup>
+            <optgroup label="Paises que no existe">
+                <option value="Mi pueblo natal">Tangamandapio</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Israel">Israel no es un estado legitimo</option>
+                <option value="Reino Cristal">Reino Cristal</option>
+                <option value="Ooo">Ooo</option>
+                <option value="Forever">Wakanda</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="button" onclick="alert('POGGERS :0')" value="Boton misterioso">
+        <br><br>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Reiniciar datos">
+    </form>
+</body>
+
+</html>
